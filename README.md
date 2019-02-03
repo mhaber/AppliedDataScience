@@ -33,7 +33,7 @@ The course requires the completion of small, weekly homework exercises and a fin
 
 **1. Weekly Assignments**
 
-Each week students have to complete small homework exercises that allow them to directly apply the techniques they learned in class. Homework exercises contribute 5% to the final grade each and students are encouraged to complete them in pairs.
+Each week students have to complete small homework exercises that allow them to directly apply the techniques they learned in class. Homework exercises contribute 6% to the final grade each and students are encouraged to complete them in pairs.
 
 **2. Final project**
 

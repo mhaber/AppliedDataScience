@@ -334,7 +334,7 @@ Promptcloud 2018
 - Active participation (\alert{Ask questions!!!})
 - Found errors or have ideas for improvement? Submit issues to GitHub:
 
-<https://github.com/mhaber/HertieDataScience/issues>
+<https://github.com/mhaber/AppliedDataScience/issues>
 
 ## What you will get out of this course
 
@@ -354,7 +354,7 @@ Promptcloud 2018
 
 - R:
 
-    + R (version 3.4.1): <http://cran.rstudio.com/>
+    + R (version 3.5.2): <http://cran.rstudio.com/>
     + RStudio (dev build): <http://www.rstudio.org/download/daily/desktop/>
 
 - R packages
@@ -372,6 +372,11 @@ Promptcloud 2018
 - Integrate GitHub into RStudio: <https://www.r-bloggers.com/rstudio-and-github/>
 
 - Clone the course's repository to your project folder
+
+## Datacamp
+
+- Complete the (free) course on introduction to R:
+<https://www.datacamp.com/courses/free-introduction-to-r>
 
 ##  {.standout}
 That's it for today. Questions?

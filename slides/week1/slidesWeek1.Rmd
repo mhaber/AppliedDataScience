@@ -92,9 +92,9 @@ _Have the words that we choose to use in our collective literature changed over 
 
 3. Count the occurences of each mood word
 $$M_\gamma = \frac{1}{n}\sum_{i=1}^{n}\frac{C_i}{C_{the}}; M_{Z \gamma}=\frac{M_\gamma - \mu_M}{\sigma_M}$$
-- why normalize by the total occurences of the word _the_?
+<!-- - why normalize by the total occurences of the word _the_? -->
 
-    + _the_ is a better indicator of prose than the total number of words
+<!--     + _the_ is a better indicator of prose than the total number of words -->
 
 ## The Expression of Emotions: Result 1
 ```{r, out.width = "220px", echo = F, fig.align='center'}
@@ -154,7 +154,7 @@ knitr::include_graphics("img/pageRank3.png")
 - Add up all the weights of your neighbors and give them to yourself and then pass on that weight to everybody that you link to. And you keep going with this until you've reached some convergence condition and you end up with the relative
 importance of these pages
 
-## Data Science Example 3: Mapping Change
+## Data Science Example 4: Mapping Change
 
 Rosvall, Martin and Carl T. Bergstrom. 2010.
 **[Mapping Change in Large Networks.](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0008694)** PLoS. 
@@ -241,9 +241,9 @@ knitr::include_graphics("img/dataScience.jpg")
 
 - Data analysis skills are highly valued in businesses
 ```{r, out.width = "200px", echo = F, fig.align='center'}
-knitr::include_graphics("img/RSalaries.png")
+knitr::include_graphics("img/salaries.png")
 ```
-O'Reilly Data Science Survey 2016
+Burtch Works Study: Salaries of Data Scientists 2018
 
 ## Why R?
 
@@ -256,19 +256,29 @@ O'Reilly Data Science Survey 2016
 
 ## Why R?
 
-- Becoming one of most popular languages in Data Science.
+- Becoming one of most popular programming languages.
 
 ```{r, out.width = "200px", echo = F, fig.align='center'}
-knitr::include_graphics("img/RLanguage.png")
+knitr::include_graphics("img/ieeeSpectrum.jpeg")
 ```
 
-IEEE Spectrum 2017
+IEEE Spectrum 2018
+
+## Why R?
+
+- key skill for data scientists
+
+```{r, out.width = "200px", echo = F, fig.align='center'}
+knitr::include_graphics("img/skills.jpeg")
+```
+
+Promptcloud 2018
 
 # Logistics
 
 ## Overview
 
-- We meet every Wednesday (except for days when there is no class)
+- Class every Wednesday (except for days when there is no class)
 - Bring your own computer - R!
 - Material is/will be on [GitHub](https://github.com/mhaber/AppliedDataScience/) and [Moodle](https://moodle.hertie-school.org/course/view.php?id=2026)
 
@@ -315,7 +325,7 @@ IEEE Spectrum 2017
 ## Final research project
 
 - Apply your data science skills to large dataset
-- Can be completed in teams of two
+- (Can be) Completed in teams of two
 - Due in the final exam week
 
 ## Attendance/Participation
@@ -326,6 +336,17 @@ IEEE Spectrum 2017
 
 <https://github.com/mhaber/HertieDataScience/issues>
 
+## What you will get out of this course
+
+- Toolset to handle complex, messy data
+- Ideas for (empirical) research 
+- Glimpse into industry problems and solutions
+
+## What you will not get out of this course
+
+- Python :(
+- Proprietary software / industry standards
+- Custom solutions to your problems
 
 # Homework for next week
 
@@ -340,6 +361,7 @@ IEEE Spectrum 2017
 
     + devtools (for installing development versions)
     + tidyverse (R packages designed for data science)
+    + nycflights13 (dataset)
 
 ## GitHub
 

@@ -101,8 +101,7 @@ Required readings are to be read and analysed thoroughly. Optional readings are 
 | Session 2: 13.02.2019 | Data Importation                                       |
 |-----------------------|--------------------------------------------------------|
 | Learning Objectives   | Learn how to read different file formats into R.       |
-| Required Readings     |- Wickham, Hadley. 2010. “A Layered Grammar of Graphics”. _Journal of Computational and Graphical Statistics_ 19 (1): 3–28. |
-|                       |- Wickham, H. and G. Grolemund. 2017. _R for Data Science: Import, Tidy, Transform, Visualize, and Model Data._ O'Reilly. Chapter 11.  |
+| Required Readings     |- Wickham, H. and G. Grolemund. 2017. _R for Data Science: Import, Tidy, Transform, Visualize, and Model Data._ O'Reilly. Chapter 11.|
 | Optional Readings   |                                                        |
 
 | Session 3: 20.02.2019 | Data Cleaning                                          |

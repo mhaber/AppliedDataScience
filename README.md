@@ -9,7 +9,7 @@ Contains slides and material for course on applied data science with R
 
 - Instructor: Matthias Haber
 
-- Email:  <a href="mailto:haber.matthias@gmail.com">haber@hertie-school.org</a>   
+- Email :  <a href="mailto:haber.matthias@gmail.com">haber@hertie-school.org</a>   
         
 - Work:  <a href="https://github.com/mhaber">https://github.com/mhaber</a>
 

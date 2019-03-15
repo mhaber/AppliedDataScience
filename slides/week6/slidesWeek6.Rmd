@@ -463,14 +463,7 @@ You can easily switch between by specifying `perl = FALSE/TRUE` in `base` R func
 
 ## General modes for patterns
 
-By default, pattern matching is case sensitive in R, but you can turn it off with `ignore.case = TRUE` (base R functions) or wrapping with `ignore.case()` (`stringr` functions). Alternatively, you can use `tolower()` and `toupper()` functions to convert everything to lower or upper case. Take the same example above: 
-
-```{r ignore.case}
-pattern <- "a.b"
-grep(pattern, strings, value = TRUE)
-grep(pattern, strings, value = TRUE, ignore.case = TRUE)
-```
-
+By default, pattern matching is case sensitive in R, but you can turn it off with `ignore.case = TRUE` (base R functions). In `stringr`, you need to pass the `ignore.case = TRUE` inside a modifier function like `str_replace(string, regex(pattern, ignore.case=TRUE))`. Alternatively, you can use `tolower()` and `toupper()` functions to convert everything to lower or upper case. 
 
 ## Regular expression vs shell globbing
 
@@ -589,6 +582,72 @@ Test your skills solving regexp crosswords at https://regexcrossword.com/challen
 <!--     2. `"(.)(.)\\2\\1"` -->
 
 
+## Group exercises solution
+
+```{r}
+#Words starting with y
+str_view(stringr::words, "^y")
+```
+
+```{r}
+#Words ending with x
+str_view(stringr::words, "x$")
+```
+
+```{r}
+#Words starting with vowels
+str_view(stringr::words, "^[aeiou]")
+```
+
+
+## Group exercises solution
+
+```{r}
+#Words that contain only consonants
+str_view(stringr::words, "^[^aeiou]+$", match=TRUE)
+```
+
+```{r}
+#Words that end with ed but not with eed
+str_view(stringr::words, "^ed$|[^e]ed$", match = TRUE)
+```
+
+```{r}
+#Words ending in ing or ise
+str_view(stringr::words, "i(ng|se)$", match = TRUE)
+```
+
+## Group exercises solution
+
+```{r}
+#All words starting with three consonants
+str_view(words, "^[^aeiou]{3}", match = TRUE)
+```
+
+```{r}
+#Three or more vowels in a row
+str_view(words, "[aeiou]{3,}", match = TRUE)
+```
+
+```{r}
+#Two or more vowel-consonant pairs in a row
+str_view(words, "([aeiou][^aeiou]){2,}", match = TRUE)
+```
+
+```{r}
+#Any two characters repeated
+str_view(words, "(..).*\\1", match = TRUE)
+```
+
+<!-- ## Group exercises solution -->
+
+<!-- * `^.*$`: Any string -->
+<!-- * `"\\{.+\\}"`: Any string with curly braces surrounding at least one character. -->
+<!-- * `\d{4}-\d{2}-\d{2}`: A date in “%Y-%m-%d” format: four digits followed by a dash, followed by two digits followed by a dash, followed by another two digits followed by a dash. -->
+<!-- * `"\\\\{4}"`: four backslashes -->
+<!-- * `(.)\1\1`: The same character apearing three times in a row -->
+<!-- * `"(.)(.)\\2\\1"`: A pair of characters followed by the same pair of characters in reversed order -->
+    
 # Homework Exercises
 
 ## Homework Exercises
@@ -597,7 +656,7 @@ For this week's homework exersises go to Moodle and answer the Quiz posted in th
 
 Also, please fill out the following survey until so that I can improve the course if necessary: https://goo.gl/forms/cyo5svHi4DmLkDWN2
 
-Deadline: Tuesday, March 19.
+Deadline: Tuesday, March 26.
 
 
 
